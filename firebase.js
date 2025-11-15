@@ -11,13 +11,13 @@ import { getFirestore } from "firebase/firestore";import { getStorage } from "fi
 
 const firebaseConfig = {
     apiKey: "AIzaSyCztPGAtH1-1iUkGY_bBUXZjxPY_9YB_wI",
-    authDomain: "learn-firebase-3f2bc.firebaseapp.com",//not
+    authDomain: "learn-firebase-3f2bc.firebaseapp.com",
     databaseURL: "https://learn-firebase-3f2bc-default-rtdb.firebaseio.com",
     projectId: "learn-firebase-3f2bc",
     storageBucket: "learn-firebase-3f2bc.firebasestorage.app",
-    messagingSenderId: "24053450657",//not
+    messagingSenderId: "24053450657",
     appId: "1:24053450657:android:c43546d44bae89704dade0",
-    measurementId: "G-3T7T0JPKZK"//not
+    measurementId: "G-3T7T0JPKZK"
 };
 
 // Initialize Firebase
@@ -29,7 +29,7 @@ const auth = initializeAuth(app, {
 });
 
 
-// Initialize Firestore (optional)
+// Initialize Firestore
 const db = getFirestore(app);
 
 export { auth, db };
