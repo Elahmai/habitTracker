@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth } from "../app/firebase";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Login = () => {
@@ -43,6 +43,8 @@ const Login = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.logo}>HABIT TRACKER</Text>
+
       <Text style={styles.title}>Welcome Back 👋</Text>
 
       <TextInput
@@ -89,6 +91,16 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingHorizontal: 25,
     backgroundColor: "#f7f7f7",
+  },
+  logo:{
+  fontSize: 28 ,
+  fontFamily: "times-new-roman",
+  borderBottomWidth: 1,
+  fontWeight: "800",
+  color: "#3b11f9ff",
+  textAlign: "center",
+  marginBottom: 20,
+
   },
   title: {
     fontSize: 28,
