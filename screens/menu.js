@@ -1,4 +1,4 @@
-// Home screen
+// menu screen
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
 import { signOut } from "firebase/auth";

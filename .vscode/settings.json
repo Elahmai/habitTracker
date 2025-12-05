@@ -1,4 +1,9 @@
 {
+  // Prevent VS Code from trying to download schemas from schemastore.org
+  // which can fail when offline or if DNS/network blocks the host.
+  "json.schemaDownload.enable": false
+}
+{
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit",
